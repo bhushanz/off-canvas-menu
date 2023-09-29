@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Oswald:wght@400;500&family=Rubik:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background:linear-gradient(90deg, rgb(237, 176, 176) ,rgb(124, 81, 65)) ;
+}
+.header-area{
+    height: 80px;
+    width: 100%;
+    background-color: rgb(33, 31, 48); ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo a{
+    color: rgb(251, 250, 250);
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 38px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+.main-menu .menu-btn{
+    margin-right: 20px;
+
+}
+
+.main-menu a{
+    color: white;
+    font-size: 30px;
+   
+    text-transform: capitalize;
+}
+ul li {
+    list-style: none;
+    position: relative;
+    width: 100vw;
+
+}
+.list-menu ul li a{
+    display: block;
+    color:white;
+    font-size: 26px;
+    text-decoration: none;
+    padding: 15px 0px 15px 10vh;
+}
+.list-menu ul li a:hover{
+    background-color:rgb(111, 111, 135);
+}
+.list-menu{
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    border-radius: 6px;
+    width: 30vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: rgb(40, 38, 61); 
+    transform: translateX(100%);
+    transition: all 1s ease;
+}
+.list-menu.active{
+    transform: translateX(0);
+   
+}
+.list-menu a i{
+    position: absolute;
+    top: 42px;
+    left: 22px;
+}
+p{
+    position: relative;
+    top:150px;
+    left: 150px;
+    font-size:28px;
+    font-family: 'Rubik', sans-serif;
+}
+@media (max-width:480px){
+p{
+  position: relative;
+  top: 150px;
+  left: 0px;
+  font-size: 24px;
+  display: block;
+  color: rgb(0, 0, 0);
+}
+.list-menu{
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    width: 45vw;
+    height: 100vh;
+}
+.list-menu ul li a{
+    position: relative;
+    left: 0px;
+    font-size: 22px;
+    padding: 10px 0px 15px 4vh;
+}
+.list-menu{
+    z-index: 1;
+    background-color: rgb(41, 41, 66);
+}
+.list-menu ul li a:hover{
+    background-color:rgb(111, 111, 135);
+}
+}
